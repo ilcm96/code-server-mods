@@ -1,4 +1,4 @@
-#!/usr/bin/with-contenv bash\
+#!/usr/bin/with-contenv bash
 
 CODE_SERVER_PATH="/app/code-server"
 WORKBENCH_PATH="$CODE_SERVER_PATH/lib/vscode/out/vs/workbench"
