@@ -5,8 +5,8 @@ WORKBENCH_PATH="$CODE_SERVER_PATH/lib/vscode/out/vs/workbench"
 WORKBENCH_CSS_PATH="$WORKBENCH_PATH/workbench.web.main.css"
 
 # Copy fonts to $WORKBENCH_PATH
-cp -rn /code-server-font-patch/resources/fonts "$WORKBENCH_PATH/"
+cp -rn /code-server-font-patch/fonts "$WORKBENCH_PATH/"
 # Prepend fonts.css to workbench.web.api.css
-cat /code-server-font-patch/resources/fonts.css >> $WORKBENCH_CSS_PATH
+cat /code-server-font-patch/fonts.css >> $WORKBENCH_CSS_PATH
 # Change favicon
-cp -f /code-server-font-patch/resources/favicon.ico "$CODE_SERVER_PATH/src/browser/media/favicon.ico"
+cp -f /code-server-font-patch/favicon.ico "$CODE_SERVER_PATH/src/browser/media/favicon.ico"
