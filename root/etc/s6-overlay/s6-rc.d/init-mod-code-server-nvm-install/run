@@ -13,8 +13,8 @@ if [ ! -s "$NVM_DIR/nvm.sh" ]; then
   nvm install --lts
 
   echo "**** setting permission ****"
-  chown -R $(id -u):$(id -g) ~/.npm
-  chown -R $(id -u):$(id -g) ~/.nvm
+  chown -R abc:abc ~/.npm
+  chown -R abc:abc ~/.nvm
 else
   echo "**** nvm already installed, skipping ****"
 fi
